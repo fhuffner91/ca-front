@@ -2,7 +2,7 @@ import { Container, Navbar, Nav, Placeholder } from "react-bootstrap";
 
 export default function Header(props) {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="primary"  expand="lg">
       <Container>
         <Navbar.Brand href={props.menu[0].path}>
           <img
