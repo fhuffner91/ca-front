@@ -1,7 +1,7 @@
 export default {
     APP_TITLE: "Clube Atacadão",
     APP_DESCRIPTION: "Descrição do APP",
-    APP_LOGO: "/vercel.svg",
+    APP_LOGO: "/images/logo.png",
     GTM_API_KEY: "",
     ANALYTICS_API_KEY: "",
     MENU: [

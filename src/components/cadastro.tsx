@@ -4,8 +4,8 @@ import axios from "axios";
 
 export default function Cadastro(props) {
   const [isLoading, setLoading] = useState(true);
-  useEffect( async () => {
-     await axios.get("http://localhost:3000").then((response) => {
+  useEffect(async () => {
+    await axios.get("http://localhost:3000").then((response) => {
       setLoading(false);
     });
   }, []);
