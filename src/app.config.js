@@ -4,6 +4,11 @@ export default {
     APP_LOGO: "/images/logo.png",
     GTM_API_KEY: "",
     ANALYTICS_API_KEY: "",
+    AUTH0_SECRET: "LONG_RANDOM_VALUE",
+    AUTH0_BASE_URL: "http://localhost:3000",
+    AUTH0_ISSUER_BASE_URL: "https://YOUR_AUTH0_DOMAIN.auth0.com",
+    AUTH0_CLIENT_ID: "YOUR_AUTH0_CLIENT_ID",
+    AUTH0_CLIENT_SECRET: "YOUR_AUTH0_CLIENT_SECRET",
     MENU: [
         { title: "Página Inicial", path: "/" },
         { title: "Categoria 1", path: "/categoria-1" },
@@ -13,16 +18,4 @@ export default {
         { title: "Finalizar Compra", path: "/finalizar-compra" },
         { title: "Contato", path: "/contato" }
     ],
-    CATEGORIES: [
-        { slug: 'categoria-1', title: "Categoria 1", description: "Descrição da Categoria" },
-        { slug: 'categoria-2', title: "Categoria 2", description: "Descrição da Categoria" },
-        { slug: 'categoria-3', title: "Categoria 3", description: "Descrição da Categoria" },
-    ],
-    POOLS: [
-        { slug: 'pool-de-compras-1', title: "Pool de Compras 1", description: "Descrição do Pool", category: "categoria-1" },
-        { slug: 'pool-de-compras-2', title: "Pool de Compras 2", description: "Descrição do Pool", category: "categoria-1" },
-        { slug: 'pool-de-compras-3', title: "Pool de Compras 3", description: "Descrição do Pool", category: "categoria-1" },
-        { slug: 'pool-de-compras-4', title: "Pool de Compras 4", description: "Descrição do Pool", category: "categoria-1" },
-        { slug: 'pool-de-compras-5', title: "Pool de Compras 5", description: "Descrição do Pool", category: "categoria-1" },
-    ]
 };

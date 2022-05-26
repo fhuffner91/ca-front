@@ -18,7 +18,7 @@ export default function LayoutPadrao({ children }) {
             menu={Config.MENU}
           ></Header>
         </Row>
-        <Row>
+        <Row className="pt-4">
           <Col>{children}</Col>
         </Row>
       </Container>

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import LayoutDefault from "src/layouts/default";
-import NovosPools from "src/components/novosPools";
-import MelhoresPools from "src/components/melhoresPools";
+import NovosPools from "src/components/widgets/novosPools";
+import MelhoresPools from "src/components/widgets/melhoresPools";
 
 export default function Index() {
   const QTDE_NOVOS_POOLS = 3;
