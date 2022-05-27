@@ -1,10 +1,19 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Card, Placeholder, Button } from "react-bootstrap";
 
 export default function MelhoresPools(props) {
+  const pool = props.pools;
+  const [isLoading, setLoading] = useState(true);
+  useEffect(async () => {
+    await axios.get("http://localhost:3000").then((response) => {
+      setLoading(false);
+    });
+  }, []);
   return (
       <>
       <h2 className="text-center">Melhores Pools</h2>
-      {props.pools.map((pool) => (
+      {isLoading ? (
           <Card className="mb-2">
             <Card.Body>
               <Placeholder as={Card.Title} animation="glow">
@@ -17,7 +26,16 @@ export default function MelhoresPools(props) {
               </Placeholder>
             </Card.Body>
           </Card>
-      ))}
-    </>
+      ):(
+          <Card className="mb-2">
+            <Card.Body>
+              <Card.Title>{pool.name}</Card.Title>
+              <Card.Text>{pool.description}</Card.Text>
+            <Button variant="secondary">Entrar</Button>
+            </Card.Body>
+          </Card>
+      )}
+      </>
   );
 }
+         
