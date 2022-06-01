@@ -1,4 +1,4 @@
-import { Container, Navbar, Nav, Placeholder } from "react-bootstrap";
+import { Container, Navbar, Nav, Placeholder, Form, Button } from "react-bootstrap";
 
 export default function Header(props) {
   return (
@@ -21,6 +21,12 @@ export default function Header(props) {
               <Nav.Link href={item.path}>{item.title}</Nav.Link>
             ))}
           </Nav>
+          <Form.Control
+            type="text"
+            placeholder="Pesquise seu produto"
+            className="w-auto"
+          />
+          <Button variant="secondary">Pesquisar</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

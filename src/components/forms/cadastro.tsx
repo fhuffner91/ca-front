@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { Card, Placeholder, Button, FormLabel } from "react-bootstrap";
 import axios from "axios";

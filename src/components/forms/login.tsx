@@ -42,7 +42,7 @@ export default function Login(props) {
             <FormLabel>Senha</FormLabel>
             <input type="text" className="form-control" />
           </Card.Body>
-          <Button variant="secondary">Entrar</Button>
+               <Button variant="secondary">Entrar</Button>
         </Card>
       )}
     </>
