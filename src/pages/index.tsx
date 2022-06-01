@@ -1,13 +1,17 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, CarouselItem, Carousel } from "react-bootstrap";
 import LayoutDefault from "src/layouts/default";
 import NovosPools from "src/components/widgets/novosPools";
 import MelhoresPools from "src/components/widgets/melhoresPools";
+import Footer from "src/layouts/footer";
+import CaFooter from "src/layouts/footer";
+import Carrossel from "src/components/widgets/carrossel";
 
 export default function Index() {
   const QTDE_NOVOS_POOLS = 3;
   return (
     <>
       <Container>
+       <Carrossel />
         <Row>
           <Col>
             <NovosPools
@@ -23,6 +27,7 @@ export default function Index() {
           </Col>
         </Row>
       </Container>
+      < CaFooter />
     </>
   );
 }
