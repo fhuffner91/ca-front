@@ -8,7 +8,7 @@ export default function LayoutPadrao({ children }) {
     <>
       <Head>
         <title>{Config.APP_TITLE}</title>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <Container fluid>
         <Row>
