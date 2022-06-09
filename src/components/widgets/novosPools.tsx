@@ -6,7 +6,8 @@ export default function NovosPools(props) {
   const pool = props.pools;
   const [isLoading, setLoading] = useState(true);
   useEffect(async () => {
-    await axios.get("http://localhost:3000").then((response) => {
+    await axios.get("http://localhost:3000")
+    .then((response) => {
       setLoading(false);
     });
   }, []);
@@ -31,6 +32,7 @@ export default function NovosPools(props) {
           <Card.Body>
             <Card.Title>{pool.name}</Card.Title>
             <Card.Text>{pool.description}</Card.Text>
+            <Card.Img src={pool.image} />
           <Button variant="secondary">Entrar</Button>
           </Card.Body>
         </Card>
