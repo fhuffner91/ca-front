@@ -11,8 +11,8 @@ export default {
     AUTH0_CLIENT_SECRET: "YOUR_AUTH0_CLIENT_SECRET",
     MENU: [
         { title: "Página Inicial", path: "/" },
-        { title: "Categoria 1", path: "/categoria-1" },
-        { title: "Pool 1", path: "/categoria-1/pool-de-compras-1" },
+        { title: "Categorias", path: "/categorias" },
+        { title: "Pools", path: "/categorias/pools" },
         { title: "Minha Conta", path: "/minha-conta" },
         { title: "Termos de Uso", path: "/termos-de-uso" },
         { title: "Finalizar Compra", path: "/finalizar-compra" },

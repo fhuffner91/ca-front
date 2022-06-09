@@ -1,12 +1,8 @@
+
+
+
 $primary :#198754;
 $secondary : #fd7e14;
 
 @import "~bootstrap/scss/bootstrap.scss";
 
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary;
-    color: #fff;
-}

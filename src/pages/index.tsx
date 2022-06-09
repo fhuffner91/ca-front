@@ -1,9 +1,10 @@
+
+
 import { Container, Row, Col, CarouselItem, Carousel } from "react-bootstrap";
 import LayoutDefault from "src/layouts/default";
 import NovosPools from "src/components/widgets/novosPools";
 import MelhoresPools from "src/components/widgets/melhoresPools";
-import Footer from "src/layouts/footer";
-import CaFooter from "src/layouts/footer";
+
 import Carrossel from "src/components/widgets/carrossel";
 
 export default function Index() {
@@ -27,7 +28,6 @@ export default function Index() {
           </Col>
         </Row>
       </Container>
-      < CaFooter />
     </>
   );
 }

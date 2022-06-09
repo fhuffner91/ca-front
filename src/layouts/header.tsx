@@ -1,18 +1,20 @@
-import { Container, Navbar, Nav, Placeholder, Form, Button } from "react-bootstrap";
 
+import { Container, Navbar, Nav, Form, Button } from "react-bootstrap";
+import { BsSearch } from "react-icons/bs";
+import LoginCircle from "src/components/buttons/loginCircle";
 export default function Header(props) {
   return (
-    <Navbar bg="primary" expand="lg" variant="dark">
+    <Navbar  bg="primary" expand="lg" variant="dark">
       <Container>
         <Navbar.Brand href={props.menu[0].path}>
+         <span>Clube </span>
           <img
             alt=""
             src={props.logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
+            width="100"
+            height="100"
+            className="d-inline-block align-center"
           />{" "}
-          {props.title}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -23,10 +25,10 @@ export default function Header(props) {
           </Nav>
           <Form.Control
             type="text"
-            placeholder="Pesquise seu produto"
+            placeholder="Pesquisar"
             className="w-auto"
           />
-          <Button variant="secondary">Pesquisar</Button>
+          <Button variant="secondary"><BsSearch /></Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
