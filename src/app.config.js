@@ -1,7 +1,7 @@
 export default {
     APP_TITLE: "Clube Atacadão",
     APP_DESCRIPTION: "Descrição do APP",
-    APP_LOGO: "/images/logo.png",
+    APP_LOGO: "/images/logo.svg",
     GTM_API_KEY: "",
     ANALYTICS_API_KEY: "",
     AUTH0_SECRET: "LONG_RANDOM_VALUE",
@@ -11,8 +11,13 @@ export default {
     AUTH0_CLIENT_SECRET: "YOUR_AUTH0_CLIENT_SECRET",
     MENU: [
         { title: "Página Inicial", path: "/" },
+
+        { title: "Categoria 1", path: "/categoria-1" },
+        { title: "Pool 1", path: "/categorias/pool-1" },
+
         { title: "Categoria 1", path: "/categoria/bebidas/bebidas-alcoolicas/cerveja" },
         { title: "Pool 1", path: "/produto/pool-de-compras-1" },
+
         { title: "Minha Conta", path: "/minha-conta" },
         { title: "Termos de Uso", path: "/termos-de-uso" },
         { title: "Finalizar Compra", path: "/finalizar-compra" },
