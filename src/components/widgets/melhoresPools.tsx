@@ -31,7 +31,7 @@ export default function MelhoresPools(props) {
             <Card.Body>
               <Card.Title>{pool.name}</Card.Title>
               <Card.Text>{pool.description}</Card.Text>
-              <Card.Img src={pool.image} />
+              <Card.Img src={props.poolImage} />
             <Button variant="secondary">Entrar</Button>
             </Card.Body>
           </Card>

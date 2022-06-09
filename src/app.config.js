@@ -10,17 +10,54 @@ export default {
     AUTH0_CLIENT_ID: "YOUR_AUTH0_CLIENT_ID",
     AUTH0_CLIENT_SECRET: "YOUR_AUTH0_CLIENT_SECRET",
     MENU: [
-        { title: "Página Inicial", path: "/" },
+        { title: "Início", path: "/" },
 
-        { title: "Categoria 1", path: "/categoria-1" },
-        { title: "Pool 1", path: "/categorias/pool-1" },
-
-        { title: "Categoria 1", path: "/categoria/bebidas/bebidas-alcoolicas/cerveja" },
-        { title: "Pool 1", path: "/produto/pool-de-compras-1" },
-
-        { title: "Minha Conta", path: "/minha-conta" },
-        { title: "Termos de Uso", path: "/termos-de-uso" },
-        { title: "Finalizar Compra", path: "/finalizar-compra" },
+        { title: "Categorias", path: "/categorias" },
+        { title: "Pools", path: "/categorias/pools" },
+        
+        { title: "Termos", path: "/termos-de-uso" },
+        { title: "Compras", path: "/finalizar-compra" },
         { title: "Contato", path: "/contato" }
     ],
+    CATEGORIES: [
+        { title: "Hot Dog", path: "/categoria-1" },
+        { title: "Pizza", path: "/categoria-2" },
+        { title: "Bolo", path: "/categoria-3" },
+        { title: "Sobremesa", path: "/categoria-4" },
+        { title: "Bebidas", path: "/categoria-5" },
+        { title: "Salgados", path: "/categoria-6" },
+        { title: "Doces", path: "/categoria-7" },
+        { title: "Hamburguer", path: "/categoria-8" },
+    ],
+    POOLS: [
+        { title: "Hot Dog", path: "/pool-1" },
+        { title: "Pool 2", path: "/pool-2" },
+        { title: "Pool 3", path: "/pool-3" },
+        { title: "Pool 4", path: "/pool-4" },
+        { title: "Pool 5", path: "/pool-5" },
+        { title: "Pool 6", path: "/pool-6" },
+        { title: "Pool 7", path: "/pool-7" },
+        { title: "Pool 8", path: "/pool-8" },
+    ],
+    PRODUCTS: [
+        { title: "Hot Dog", path: "/produto-1" },
+        { title: "Pizza", path: "/produto-2" },
+        { title: "Bolo", path: "/produto-3" },
+        { title: "Sobremesa", path: "/produto-4" },
+        { title: "Bebidas", path: "/produto-5" },
+        { title: "Salgados", path: "/produto-6" },
+        { title: "Doces", path: "/produto-7" },
+        { title: "Hamburguer", path: "/produto-8" },
+    ],
+    POOL_IMAGES: [
+        { title: "Hot Dog", path: "/images/Hot_dog.png" },
+        { title: "Pool 2", path: "/images/pool-2.jpg" },
+        { title: "Pool 3", path: "/images/pool-3.jpg" },
+        { title: "Pool 4", path: "/images/pool-4.jpg" },
+        { title: "Pool 5", path: "/images/pool-5.jpg" },
+        { title: "Pool 6", path: "/images/pool-6.jpg" },
+        { title: "Pool 7", path: "/images/pool-7.jpg" },
+        { title: "Pool 8", path: "/images/pool-8.jpg" },
+    ],
+
 };

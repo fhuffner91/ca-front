@@ -1,18 +1,18 @@
 
 
-import { Container, Row, Col, CarouselItem, Carousel } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import LayoutDefault from "src/layouts/default";
 import NovosPools from "src/components/widgets/novosPools";
 import MelhoresPools from "src/components/widgets/melhoresPools";
+import HomeModal from "src/components/widgets/homeModal";
 
-import Carrossel from "src/components/widgets/carrossel";
 
 export default function Index() {
   const QTDE_NOVOS_POOLS = 3;
   return (
     <>
+    <HomeModal />
       <Container>
-       <Carrossel />
         <Row>
           <Col>
             <NovosPools

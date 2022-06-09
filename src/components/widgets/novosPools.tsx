@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Col, Card, Placeholder, Button } from "react-bootstrap";
+import HomeModal from "./homeModal";
 
-export default function NovosPools(props) {
+export default function NovosPools(props){
   const pool = props.pools;
   const [isLoading, setLoading] = useState(true);
   useEffect(async () => {
@@ -37,6 +38,7 @@ export default function NovosPools(props) {
           </Card.Body>
         </Card>
       )}
+      <HomeModal />
     </>
   );
 }
