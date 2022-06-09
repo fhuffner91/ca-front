@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { Container, Row, Col, Placeholder } from "react-bootstrap";
 import LayoutDefault from "src/layouts/default";
-import {getAllCategories} from 'src/services/api'
+import { getAllCategories } from "src/services/api";
 
-export default function Categoria(props) {
+export default function Categorias(props) {
   const router = useRouter();
 
   return router.isFallback ? (
@@ -71,28 +71,29 @@ export default function Categoria(props) {
   );
 }
 
-Categoria.getLayout = (page) => {
+Categorias.getLayout = (page) => {
   return <LayoutDefault>{page}</LayoutDefault>;
 };
 
 export async function getStaticPaths() {
-  const categories = await getAllCategories();
+  const data = await getAllCategories();
+  const categories = data.filter((cat) => cat.level == 1);
   const paths = categories.map((item) => ({
     params: {
+      department: item.parent,
       category: item.slug,
     },
   }));
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
-  const categories = await getAllCategories();
-  let details = categories.filter((item) => item.slug == params.category)[0];
+  const data = await getAllCategories();
+  let details = data.filter((item) => item.slug == params.category)[0];
   return {
     props: {
-      title: details?.title,
+      title: details?.name,
       slug: details?.slug,
-      description: details?.description,
     },
   };
 }

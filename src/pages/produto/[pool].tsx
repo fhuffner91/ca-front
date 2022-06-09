@@ -80,7 +80,9 @@ export async function getStaticPaths() {
   const paths = pools.map((item) => ({
     params: {
       pool: item.slug,
+      department: item.department,
       category: item.category,
+      subcategory: item.subcategory,
     },
   }));
   return { paths, fallback: true };
@@ -94,7 +96,9 @@ export async function getStaticProps({ params }) {
       title: details?.title,
       slug: details?.slug,
       description: details?.description,
+      department: details?.department,
       category: details?.category,
+      subcategory: details?.subcategory,
     },
   };
 }
