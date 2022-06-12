@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Config from 'src/app.config.js';
 
 export default class MyDocument extends Document {
   render() {
@@ -11,7 +12,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className={ Config.APP_LANDING_PAGE ? 'bg-secondary' : ''}>
           <Main />
           <NextScript />
         </body>

@@ -2,6 +2,7 @@ export default {
     APP_TITLE: "Clube Atacadão",
     APP_DESCRIPTION: "Descrição do APP",
     APP_LOGO: "/images/logo.svg",
+    APP_LANDING_PAGE: true,
     GTM_API_KEY: "",
     ANALYTICS_API_KEY: "",
     AUTH0_SECRET: "LONG_RANDOM_VALUE",
